@@ -1,0 +1,177 @@
+html
+{
+    width: 100%;
+    height: 100%;
+}
+
+body
+{
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at 100px 50px, #303030 0%, #909090 100%);
+    color: white;
+    overflow: hidden;
+}
+
+.mainContainer
+{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.headerZone
+{
+    height: 40px;
+    font-weight: bold;
+    font-size: 160%;
+    border-bottom: solid 5px white;
+    border-radius: 60%;
+    padding-top: 6px;
+}
+
+.gameTitle
+{
+    word-spacing: 40px;
+    letter-spacing: 30px;
+}
+
+.gameZone
+{
+    width: 60%;
+    height: 80%;
+    left: 19%;
+    position: relative;
+    top: 3%;
+}
+
+.gameBoard
+{
+    height: 100%;
+    background: black;
+    border-top: solid 1px grey;
+}
+
+.infoZone
+{
+    text-align: left;
+    color: whitesmoke;
+    background: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 24px;
+    padding-top: 6px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+#playerScore, #highScore 
+{
+    font-family: Seymour One;
+    font-size: 120%;
+}
+
+#playerScore
+{
+    position: relative;
+    left: 10px;
+    display: inline-block;
+    width: 190px;
+}
+
+#highScore
+{
+    position: relative;
+    left: 20%;
+    display: inline-block;
+    width: 190px;
+}
+
+#lblPlayerScore
+{
+    position: relative;
+    left: 10px;
+}
+
+#lblHighScore
+{
+    position: relative;
+    left: 20%;
+}
+
+#lives
+{
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 3px;
+}
+
+.playerLive
+{
+    width: 26px;
+    display: inline-block;
+    filter: grayscale(1) brightness(2);
+}
+
+.mainMenu
+{
+    padding-top: 30px;
+    font-size: 150%;
+    font-variant-caps: small-caps;
+    font-family: Rokkitt;
+}
+
+.mainMenu img
+{
+    border-style: none;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.mainMenu p
+{
+    line-height: 0;
+}
+
+.title
+{
+    font-size: 190%;
+}
+
+.bigLine
+{
+    line-height: 5 !important;
+}
+
+#bulletsCanvas, #cannonCanvas, #enemiesCanvas, #shieldsCanvas
+{
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 100%;
+    height: 100%;
+    cursor: none;
+}
+
+.gameOver
+{
+    position: absolute;
+    left: 30%;
+    top: 46%;
+    font-family: Rokkitt;
+    font-size: 320%;
+    font-weight: bold;
+    letter-spacing: 26px;
+    background: black;
+    border: solid 1px white;
+    text-align: center;
+    display: inline-block;
+    width: 580px;
+}
+
+.cache
+{
+    display: none;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SpaceInvaders</title>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&family=Seymour+One&display=swap" rel="stylesheet">		
+		<link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="styles/main.css" />
+		<script src="scripts/jquery-3.1.1.min.js"></script>
+		<script src="scripts/drawingManager.js"></script>
+		<script src="scripts/gameManager.js"></script>
+		<script src="scripts/soundManager.js"></script>
+		<script src="scripts/main.js"></script>
+	</head>
+	<body>
+		<audio id="sndShoot"><source src="sounds/shoot.mp3" type="audio/mpeg"></audio>
+		<audio id="sndExplode"><source src="sounds/explode.mp3" type="audio/mpeg"></audio>
+		<audio id="sndSaucer"><source src="sounds/saucer.mp3" type="audio/mpeg"></audio>
+		<audio id="sndMove1"><source src="sounds/enemyMove_1.mp3" type="audio/mpeg"></audio>
+		<audio id="sndMove2"><source src="sounds/enemyMove_2.mp3" type="audio/mpeg"></audio>
+		<audio id="sndMove3"><source src="sounds/enemyMove_3.mp3" type="audio/mpeg"></audio>
+		<audio id="sndMove4"><source src="sounds/enemyMove_4.mp3" type="audio/mpeg"></audio>
+		<audio id="sndCannonExplode"><source src="sounds/cannonExplode.mp3" type="audio/mpeg"></audio>
+		<div class="mainContainer">
+			<div class="headerZone">
+				<label class="gameTitle">La Guerre des Etoiles</label>
+			</div>
+			<div class="gameZone">
+				<div class="infoZone">
+					<label id="lblPlayerScore">Player : </label>
+					<label id="playerScore">0000000000</label>
+					<label id="lblHighScore">High score : </label>
+					<label id="highScore">0000000000</label>
+					<div id="lives"></div>
+				</div>
+				<div class="gameBoard">
+					<img id="imgExplosion1" class="cache" src="images/explosion-1.png">
+					<img id="imgExplosion2" class="cache" src="images/explosion-2.png">
+					<img id="imgExplosion3" class="cache" src="images/explosion-3.png">
+					<img id="imgCannon" class="cache" src="images/cannon.png">
+					<img id="imgSaucer" class="cache" src="images/saucer.png">
+					<img id="imgEnemy-1-1" class="cache" src="images/enemy-1-1.png">
+					<img id="imgEnemy-1-2" class="cache" src="images/enemy-1-2.png">
+					<img id="imgEnemy-2-1" class="cache" src="images/enemy-2-1.png">
+					<img id="imgEnemy-2-2" class="cache" src="images/enemy-2-2.png">
+					<img id="imgEnemy-3-1" class="cache" src="images/enemy-3-1.png">
+					<img id="imgEnemy-3-2" class="cache" src="images/enemy-3-2.png">
+					<canvas id="bulletsCanvas"></canvas>
+					<canvas id="enemiesCanvas"></canvas>
+					<canvas id="shieldsCanvas"></canvas>
+					<canvas id="cannonCanvas"></canvas>
+					<div class="mainMenu">
+						<p class="title">Jouez à la guerre des étoiles
+						<p>Avec votre canon, détruisez les vaisseaux ennemis avant
+						<p>qu'ils n'atteignent le sol, tout en évitant leurs tirs
+						<p class="bigLine">Tableau des scores
+						<p><img class="menuThmubnail" src="images/saucer.png">? Mystère
+						<p><img class="menuThmubnail" src="images/enemy-3-1.png">30 points
+						<p><img class="menuThmubnail" src="images/enemy-2-1.png">20 points
+						<p><img class="menuThmubnail" src="images/enemy-1-1.png">10 points
+						<p class="bigLine">Appuyez sur la touche P pour démarrer une partie
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
